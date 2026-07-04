@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnThis | Apprendre le développement web au Congo</title>
+    <meta
+      name="description"
+      content="LearnThis est une plateforme e-learning pour apprendre HTML, CSS, JavaScript et Git à votre rythme, avec des projets concrets."
+    >
+    <meta name="theme-color" content="#039ff4">
+    <link rel="icon" href="icones/learnthis.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="#accueil" class="brand" aria-label="LearnThis - Accueil">
+          <span class="brand-mark">
+            <img src="icones/learnthis.svg" alt="" width="40" height="40">
+          </span>
+          Learn<span>This</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#fonctionnalites">Fonctionnalités</a>
+          <a href="#avis">Avis</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#tarifs" class="btn">Commencer</a>
+      </div>
+    </header>
+
+    <main id="accueil">
+
+      <!-- 1. HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="section-tag">Formation en ligne · Développement web</p>
+            <h1 id="hero-title">
+              Apprenez à <span>créer des sites web</span>, à votre rythme
+            </h1>
+            <p>
+              Des cours vidéo, des exercices corrigés et des projets guidés en
+              HTML, CSS et JavaScript. Vous avancez pas à pas, même sans
+              expérience préalable.
+            </p>
+            <div class="hero-actions">
+              <a href="#tarifs" class="btn">Essayer gratuitement</a>
+              <a href="#fonctionnalites" class="btn btn-outline">Voir le parcours</a>
+            </div>
+            <ul class="hero-stats" aria-label="Chiffres clés">
+              <li>
+                <strong>120+</strong>
+                <span>leçons vidéo</span>
+              </li>
+              <li>
+                <strong>18</strong>
+                <span>projets guidés</span>
+              </li>
+              <li>
+                <strong>4.8/5</strong>
+                <span>satisfaction</span>
+              </li>
+            </ul>
+          </div>
+
+          <figure class="hero-visual">
+            <img
+              src="images/elearning-online-learning-character-illustration-vector.jpg"
+              alt="Illustration d'un cours en ligne avec un formateur et des apprenants connectés"
+              width="640"
+              height="480"
+            >
+          </figure>
+        </div>
+      </section>
+
+      <!-- 2. FONCTIONNALITÉS -->
+      <section
+        id="fonctionnalites"
+        class="features"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <header class="features-header">
+            <p class="section-tag">Fonctionnalités</p>
+            <h2 id="features-title" class="section-title">
+              Tout ce qu'il faut pour apprendre sérieusement
+            </h2>
+            <p class="section-lead">
+              Un parcours structuré, pensé pour les débutants qui veulent
+              progresser vite avec des bases solides.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="feature-icon">
+                <img src="icones/html5.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Cours progressifs</h3>
+              <p>
+                Des modules courts du niveau débutant au niveau intermédiaire,
+                avec des exemples clairs et des quiz de validation.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">
+                <img src="icones/css.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Projets concrets</h3>
+              <p>
+                Construisez landing pages, formulaires et mini-apps pour
+                constituer un portfolio crédible dès la formation.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">
+                <img src="icones/javascript.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Support communauté</h3>
+              <p>
+                Posez vos questions, partagez vos avancées et recevez des
+                retours de pairs et de mentors.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TÉMOIGNAGES -->
+      <section id="avis" class="testimonials" aria-labelledby="testimonials-title">
+        <div class="container testimonials-layout">
+          <div>
+            <p class="section-tag">Témoignages</p>
+            <h2 id="testimonials-title" class="section-title">
+              Ils ont transformé leur curiosité en compétence
+            </h2>
+            <p class="section-lead">
+              Des apprenants de Brazzaville, Pointe-Noire et Kinshasa partagent
+              leur expérience sur LearnThis.
+            </p>
+          </div>
+
+          <div
+            class="testimonial-slider"
+            role="region"
+            aria-roledescription="carrousel"
+            aria-label="Avis clients"
+          >
+            <input class="testimonial-radio" type="radio" name="review" id="review-1" checked>
+            <input class="testimonial-radio" type="radio" name="review" id="review-2">
+            <input class="testimonial-radio" type="radio" name="review" id="review-3">
+
+            <div class="testimonial-viewport">
+              <div class="testimonial-track">
+                <article class="testimonial-slide" id="slide-1">
+                  <div class="testimonial-card">
+                    <h3 class="sr-only">Avis de Marie Nkounkou</h3>
+                    <blockquote>
+                      « En 3 mois j'ai publié ma première landing page. Les
+                      exercices sont concrets et le rythme est parfait après
+                      le travail. »
+                    </blockquote>
+                    <div class="testimonial-author">
+                      <img
+                        class="avatar-photo"
+                        src="images/a9217f43edd88f18a5bdbc480aa4d8e4.jpg"
+                        alt="Portrait de Marie Nkounkou"
+                        width="56"
+                        height="56"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <div>
+                        <cite><strong>Marie Nkounkou</strong></cite>
+                        <span>Étudiante · Brazzaville</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-slide" id="slide-2">
+                  <div class="testimonial-card">
+                    <h3 class="sr-only">Avis de Junior Bissila</h3>
+                    <blockquote>
+                      « Le module Git m'a évité des erreurs sur mes premiers
+                      projets. Je recommande LearnThis à toute ma promo. »
+                    </blockquote>
+                    <div class="testimonial-author">
+                      <img
+                        class="avatar-photo"
+                        src="images/1fc96e1619b913eade6eb6533f72cf83.jpg"
+                        alt="Portrait de Junior Bissila"
+                        width="56"
+                        height="56"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <div>
+                        <cite><strong>Junior Bissila</strong></cite>
+                        <span>Apprenant · Pointe-Noire</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-slide" id="slide-3">
+                  <div class="testimonial-card">
+                    <h3 class="sr-only">Avis d'Aïcha Kabamba</h3>
+                    <blockquote>
+                      « J'ai enfin compris CSS Grid et Flexbox grâce aux
+                      visuels et aux défis hebdomadaires. Très motivant. »
+                    </blockquote>
+                    <div class="testimonial-author">
+                      <img
+                        class="avatar-photo"
+                        src="images/e8e4ba072142c97db90b39b133c5458a.jpg"
+                        alt="Portrait d'Aïcha Kabamba"
+                        
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <div>
+                        <cite><strong>Aïcha Kabamba</strong></cite>
+                        <span>Autodidacte · Kinshasa</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="testimonial-dots" role="group" aria-label="Changer d'avis affiché">
+              <label for="review-1">
+                <span class="sr-only">Afficher l'avis 1 sur 3 : Marie Nkounkou</span>
+              </label>
+              <label for="review-2">
+                <span class="sr-only">Afficher l'avis 2 sur 3 : Junior Bissila</span>
+              </label>
+              <label for="review-3">
+                <span class="sr-only">Afficher l'avis 3 sur 3 : Aïcha Kabamba</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. TARIFS -->
+      <section id="tarifs" class="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <header class="pricing-header">
+            <p class="section-tag">Tarifs</p>
+            <h2 id="pricing-title" class="section-title">
+              Un plan pour chaque ambition
+            </h2>
+            <p class="section-lead">
+              Commencez gratuitement, puis passez au plan adapté à votre rythme
+              d'apprentissage.
+            </p>
+          </header>
+
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <h3>Découverte</h3>
+              <p class="pricing-price">0 FCFA</p>
+              <ul class="pricing-list">
+                <li>5 leçons gratuites</li>
+                <li>1 projet guidé</li>
+                <li>Accès communauté</li>
+              </ul>
+              <a href="#cta" class="btn btn-outline">Créer un compte</a>
+            </article>
+
+            <article class="pricing-card pricing-card-featured">
+              <span class="pricing-badge">Populaire</span>
+              <h3>Étudiant</h3>
+              <p class="pricing-price">
+                7 500 FCFA <span>/ mois</span>
+              </p>
+              <ul class="pricing-list">
+                <li>Parcours complet HTML, CSS, JS</li>
+                <li>12 projets notés</li>
+                <li>Certificat de fin de module</li>
+                <li>Support mentor 2× / semaine</li>
+              </ul>
+              <a href="#cta" class="btn">Choisir ce plan</a>
+            </article>
+
+            <article class="pricing-card">
+              <h3>Pro</h3>
+              <p class="pricing-price">
+                13 000 FCFA <span>/ mois</span>
+              </p>
+              <ul class="pricing-list">
+                <li>Tout le plan Étudiant</li>
+                <li>Parcours Git &amp; déploiement</li>
+                <li>Revue de portfolio</li>
+                <li>Accès prioritaire aux mentors</li>
+              </ul>
+              <a href="#cta" class="btn btn-outline">Passer en Pro</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. CTA -->
+      <section id="cta" class="cta-section" aria-labelledby="cta-title">
+        <div class="container cta-content">
+          <h2 id="cta-title">
+            Apprenez le développement web au Congo,<br>
+            sans perdre de temps
+          </h2>
+          <p class="cta-lead">
+            Explorez des cours structurés, exercices pratiques et projets guidés,
+            puis construisez un portfolio crédible plus simplement.
+          </p>
+          <div class="cta-actions">
+            <a href="#tarifs" class="cta-button">Commencer maintenant</a>
+            <a href="#fonctionnalites" class="btn btn-outline cta-button-outline">Découvrir le parcours</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. FOOTER -->
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <h2 class="sr-only">Contact et liens utiles</h2>
+
+        <div class="footer-grid">
+          <div class="footer-panel">
+            <a href="#accueil" class="brand">
+              <span class="brand-mark">
+                <img src="icones/learnthis.svg" alt="" width="40" height="40">
+              </span>
+              Learn<span>This</span>
+            </a>
+            <p>
+              Plateforme e-learning conçue pour les futurs développeurs web en
+              Afrique centrale.
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Liens plateforme">
+            <h3>Plateforme</h3>
+            <ul>
+              <li><a href="#fonctionnalites">Parcours</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#avis">Témoignages</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-links" aria-label="Ressources">
+            <h3>Ressources</h3>
+            <ul>
+              <li><a href="#accueil">Blog</a></li>
+              <li><a href="#accueil">FAQ</a></li>
+              <li><a href="#accueil">Guides gratuits</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-links" aria-label="Contact">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="mailto:saintmlg@icloud.com">saintmlg@icloud.com</a></li>
+              <li><a href="#accueil">Support</a></li>
+              <li><a href="#accueil">Partenariats</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 LearnThis. Tous droits réservés.</p>
+          <p>Mentions légales · Confidentialité</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
